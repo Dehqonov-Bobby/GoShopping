@@ -1,0 +1,3787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoShopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+
+        </div>
+
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+
+        <div id="reklama" class="reklama">
+
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/reklamasvitr.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Erkaklar uchun svitrlar</h5>
+                            <p>Kuzgi juda ajoyib svitrlar ko'pro ma'lumot uchun bosin</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/reklamakurtka.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Kurtkalar</h5>
+                            <p>Bolalar hamda kattalar uchun ajoyib qishbop kurtkalar ko'proq ko'rish uchun ustiga bosin
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/reklamajempir.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jempirlar</h5>
+                            <p>Erkaklar uchun qishbop ajoyib jempirlar ko'proq ko'rish uchun ustiga bosin</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="things">
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KurtkaDetskiyJigarrang230k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 230 ming so'm <br> Bolalar uchun kurtka <br> Rang: Jigarrang</p>
+                    <button id="btn" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/PartaDetskiyPushti1170k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dars Stoli</h5>
+                    <p class="card-text">Narx: 1 170 ming so'm <br> Yosh bolalar uchun dars stoli <br> Rang: Pushti </p>
+                    <button id="btn1" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/KurtkaDetskiyQizPushti240k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 240 ming so'm <br>Kichkina qizlar uchun kurtka <br> Rang: Pushti </p>
+                    <button id="btn2" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KastumErkakQora300k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kastum</h5>
+                    <p class="card-text">Narx: 300 ming so'm <br> Erkaklar uchun kastum <br> Rang: Qora </p>
+                    <button id="btn3" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/StakanUzun120k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Stakan</h5>
+                    <p class="card-text">Narx: 120 ming so'm <br> Oshxona uchun ajoyib stakanlar <br> Rang: shishali
+                    </p>
+                    <button id="btn4" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/SvitrErkakOq200k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jempir</h5>
+                    <p class="card-text">Narx: 200 ming so'm <br> Erkaklar uchun Jempir <br> Rang: Oq </p>
+                    <button id="btn5" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ShakardonlarKombo400k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shakardonlar</h5>
+                    <p class="card-text">Narx: 400 ming so'm <br> Oshxona uchun ajoyib shakardonlar <br> Rang: Qora </p>
+                    <button id="btn6" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/PolKurtka170k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jempir</h5>
+                    <p class="card-text">Narx: 170 ming so'm <br> Bolalar uchun ajoyib jempir <br> Rang: Qora </p>
+                    <button id="btn7" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/JempirErkaklarJigarrang200k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Svitr</h5>
+                    <p class="card-text">Narx: 200 ming so'm <br> Erkaklar uchun ajoyib svitr <br> Rang: Jigarrang</p>
+                    <button id="btn8" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Hokandoz50k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hokandozlar</h5>
+                    <p class="card-text">Narx: 50 ming so'm <br>Uy uchun ajoyib hokandozlar <br> Rang: Qizil va ko'k
+                    </p>
+                    <button id="btn9" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KurtkaErkaklarSariq250k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 250 ming so'm <br>Erkaklar uchun ajoyib qishki kurtka<br> Rang: Sariq</p>
+                    <button id="btn10" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KurtkaDetskiyKulrang230k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 230 ming so'm <br>Bolalar uchun ajoyib qishki kurtka<br> Rang: Kulrang
+                    </p>
+                    <button id="btn11" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/PartaDetskiyKok1170k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dars stoli</h5>
+                    <p class="card-text">Narx: 1 170 ming so'm <br>Bolalar uchun ajoyib dars stoli<br> Rang: Ko'k</p>
+                    <button id="btn12" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KastumErkakKok300k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kastum</h5>
+                    <p class="card-text">Narx: 300 ming so'm <br>Erkaklar uchun ajoyib kastum<br> Rang: Ko'k</p>
+                    <button id="btn13" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/Qozonlar350k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Qozonlar</h5>
+                    <p class="card-text">Narx: 350 ming so'm <br>Oshxona uchun ajoyib qozonlar <br> Rang: Oq</p>
+                    <button id="btn14" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/JempirErkaklarQora200k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Svitr</h5>
+                    <p class="card-text">Narx: 200 ming so'm <br>Erkaklar uchun ajoyib svitr<br> Rang: Qora</p>
+                    <button id="btn15" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ShvabraSiyohrang150k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shvabra</h5>
+                    <p class="card-text">Narx: 150 ming so'm <br>Uy uchun ajoyib shvabra<br> Rang: Siyohrang</p>
+                    <button id="btn16" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KurtkaDetskiyQizJigarrang240k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 240 ming so'm <br>Kichkina qizlar uchun ajoyib kurtka<br> Rang: Jigarrang
+                    </p>
+                    <button id="btn17" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/SvitrErkakYashil200k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jempir</h5>
+                    <p class="card-text">Narx: 200 ming so'm <br>Erkaklar uchun ajoyib jempir<br> Rang: Yashil</p>
+                    <button id="btn18" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ShakardonlarKomboKattaOq500k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shakardonlar</h5>
+                    <p class="card-text">Narx: 500 ming so'm <br>Oshxona uchun ajoyib shakardonlar<br> Rang: Oq</p>
+                    <button id="btn19" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/JempirErkaklarToqKok200k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Svitr</h5>
+                    <p class="card-text">Narx: 200 ming so'm <br>Erkaklar uchun ajoyib svitr<br> Rang: To'q Ko'k</p>
+                    <button id="btn20" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/photo_2024-11-14_19-30-54.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 180 ming so'm <br>Bolalar uchun ajoyib kurtka<br> Rang: Kulrang</p>
+                    <button id="btn21" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/KurtkaErkaklarOq250k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kurtka</h5>
+                    <p class="card-text">Narx: 250 ming so'm <br>Erkaklar uchun ajoyib kurtka<br> Rang: Oq</p>
+                    <button id="btn22" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ShvabraSariq150k.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Shvabra</h5>
+                    <p class="card-text">Narx: 150 ming so'm <br>Uy uchun ajoyib shvabra<br> Rang: Sariq</p>
+                    <button id="btn23" class="btn btn-primary">Ko'proq ko'rish</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="aboutUs">
+            <h1>GoShopping is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. <br>
+                Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full
+                correctness <br>
+                of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and
+                privacy policy. <br>
+
+                Copyright 2024-2025 by Refsnes Data. All Rights Reserved. GoShopping is Powered by .CSS.
+            </h1>
+
+            <div class="row10">
+                <a href="https://t.me/BobbyBratan"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://github.com/Dehqonov-Bobby/Dehqonov-Bobby"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>.developed by Komron</p>
+        </div>
+    </div>
+
+    <div class="About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.6<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>8</p>
+                    </div>
+                    <div class="olcham">
+                        <p>9</p>
+                    </div>
+                    <div class="olcham">
+                        <p>10</p>
+                    </div>
+                    <div class="olcham">
+                        <p>11</p>
+                    </div>
+                    <div class="olcham">
+                        <p>12</p>
+                    </div>
+                    <div class="olcham">
+                        <p>13</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 8 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 12 kishi sotib oldi</p>
+                </div>
+                <h1>4 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>G'ulomjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Aziz</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Nodir</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>170 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About1 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back1" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.6<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>8</p>
+                    </div>
+                    <div class="olcham">
+                        <p>9</p>
+                    </div>
+                    <div class="olcham">
+                        <p>10</p>
+                    </div>
+                    <div class="olcham">
+                        <p>11</p>
+                    </div>
+                    <div class="olcham">
+                        <p>12</p>
+                    </div>
+                    <div class="olcham">
+                        <p>13</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 52 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 4 kishi sotib oldi</p>
+                </div>
+                <h1>6 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>G'ulomjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Aziz</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Nodir</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Ozodbek</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Odilbek</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>1 170 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About2 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="roww">
+                <div class="img">
+                    <i id="Back2" class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="color">
+
+                </div>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.3<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>8</p>
+                    </div>
+                    <div class="olcham">
+                        <p>9</p>
+                    </div>
+                    <div class="olcham">
+                        <p>10</p>
+                    </div>
+                    <div class="olcham">
+                        <p>11</p>
+                    </div>
+                    <div class="olcham">
+                        <p>12</p>
+                    </div>
+                    <div class="olcham">
+                        <p>13</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 79 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 12 kishi sotib oldi</p>
+                </div>
+                <h1>3 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>G'ulomjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Aziz</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>240 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About3 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back3" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.2<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>14</p>
+                    </div>
+                    <div class="olcham">
+                        <p>15</p>
+                    </div>
+                    <div class="olcham">
+                        <p>16</p>
+                    </div>
+                    <div class="olcham">
+                        <p>17</p>
+                    </div>
+                    <div class="olcham">
+                        <p>18</p>
+                    </div>
+                    <div class="olcham">
+                        <p>19</p>
+                    </div>
+                    <div class="olcham">
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>300 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About4 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back4" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.9<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>14</p>
+                    </div>
+                    <div class="olcham">
+                        <p>15</p>
+                    </div>
+                    <div class="olcham">
+                        <p>16</p>
+                    </div>
+                    <div class="olcham">
+                        <p>17</p>
+                    </div>
+                    <div class="olcham">
+                        <p>18</p>
+                    </div>
+                    <div class="olcham">
+                        <p>19</p>
+                    </div>
+                    <div class="olcham">
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>120 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About5 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back5" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>5<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>14</p>
+                    </div>
+                    <div class="olcham">
+                        <p>15</p>
+                    </div>
+                    <div class="olcham">
+                        <p>16</p>
+                    </div>
+                    <div class="olcham">
+                        <p>17</p>
+                    </div>
+                    <div class="olcham">
+                        <p>18</p>
+                    </div>
+                    <div class="olcham">
+                        <p>19</p>
+                    </div>
+                    <div class="olcham">
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About6 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back6" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>14</p>
+                    </div>
+                    <div class="olcham">
+                        <p>15</p>
+                    </div>
+                    <div class="olcham">
+                        <p>16</p>
+                    </div>
+                    <div class="olcham">
+                        <p>17</p>
+                    </div>
+                    <div class="olcham">
+                        <p>18</p>
+                    </div>
+                    <div class="olcham">
+                        <p>19</p>
+                    </div>
+                    <div class="olcham">
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>400 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About7 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back7" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 13 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 2 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>170 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About8 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back8" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>5<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 213 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 36 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>9 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About9 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back9" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.3<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 13 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 2 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>50 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About10 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back10" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 27 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 12 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>5 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>250 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About11 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back11" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 23 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 73 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>29 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>230 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About12 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back12" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.9<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 27 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 12 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>5 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>1 170 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About13 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back13" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.9<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 27 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 12 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>4 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>300 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About14 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back14" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.2<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>Katta</p>
+                        </div>
+                        <div class="olcham">
+                            <p>O'rtacha</p>
+                        </div>
+                        <div class="olcham">
+                            <p>Kichkina</p>
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 36 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 23 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>9 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>350 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About15 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back15" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.2<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>Katta</p>
+                        </div>
+                        <div class="olcham">
+                            <p>O'rtacha</p>
+                        </div>
+                        <div class="olcham">
+                            <p>Kichkina</p>
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 67 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 16 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>3 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About16 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back16" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>5<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 213 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 36 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>9 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About17 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back17" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.2<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>Katta</p>
+                        </div>
+                        <div class="olcham">
+                            <p>O'rtacha</p>
+                        </div>
+                        <div class="olcham">
+                            <p>Kichkina</p>
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 36 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 23 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>9 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>150 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About18 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back18" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 27 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 12 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>5 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>240 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About19 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back19" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>5<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>14</p>
+                    </div>
+                    <div class="olcham">
+                        <p>15</p>
+                    </div>
+                    <div class="olcham">
+                        <p>16</p>
+                    </div>
+                    <div class="olcham">
+                        <p>17</p>
+                    </div>
+                    <div class="olcham">
+                        <p>18</p>
+                    </div>
+                    <div class="olcham">
+                        <p>19</p>
+                    </div>
+                    <div class="olcham">
+                        <p>20</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About20 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+            <div class="img">
+                <i id="Back20" class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="info">
+                <div class="star">
+                    <div class="sharh2">
+                        <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></h6>
+                    </div>
+                </div>
+                <h5>O'zingiz uchun mos o'lchamni tanlang</h5>
+                <div class="row">
+                    <div class="olcham">
+                        <p>Katta</p>
+                    </div>
+                    <div class="olcham">
+                        <p>O'rtacha</p>
+                    </div>
+                    <div class="olcham">
+                        <p>Kichkina</p>
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <p>Sotuvda 13 dona bor</p>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <p>Bu haftada 0 kishi sotib oldi</p>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga gap
+                                yo'q </span></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>500 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About21 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back21" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>5<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 213 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 36 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>9 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>200 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About22 About">
+        <div class="navbar">
+            <h1>Logo icon</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Yangi</button>
+            <button>Aksiya</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back22" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>3</p>
+                        </div>
+                        <div class="olcham">
+                            <p>4</p>
+                        </div>
+                        <div class="olcham">
+                            <p>5</p>
+                        </div>
+                        <div class="olcham">
+                            <p>6</p>
+                        </div>
+                        <div class="olcham">
+                            <p>7</p>
+                        </div>
+                        <div class="olcham">
+                            <p>8</p>
+                        </div>
+                        <div class="olcham">
+                            <p>9</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 13 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 2 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>1 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>180 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+    <div class="About23 About">
+        <div class="navbar">
+            <h1>GoShopping</h1>
+            <div class="row">
+                <div class="uzb">
+                    <p>UZ</p>
+                </div>
+                <div class="eng">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <a href="">Biz haqimizda</a>
+            <a href="">Kontakt</a>
+            <button><i class="fa-solid fa-cart-shopping"></i> 0 so'm</button>
+        </div>
+        <div class="hashtags">
+            <button>Hot</button>
+            <button>Erkaklar uchun</button>
+            <button>Ayollar uchun</button>
+            <button>Bolalar uchun</button>
+            <button>O'quv qirollari</button>
+            <button>Uy jihozlari</button>
+            <button>O'yinchoqlar</button>
+            <button>Boshqalar</button>
+        </div>
+        <div class="row">
+
+            <div class="info">
+                <div class="malumot">
+                    <div class="img">
+                        <i id="Back23" class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="star">
+                        <div class="sharh2">
+                            <h6>4.8<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></h6>
+                        </div>
+                    </div>
+                    <h5>O'zingiz uchun mos yoshdagi o'lchamni tanlang</h5>
+                    <div class="row">
+                        <div class="olcham">
+                            <p>14</p>
+                        </div>
+                        <div class="olcham">
+                            <p>15</p>
+                        </div>
+                        <div class="olcham">
+                            <p>16</p>
+                        </div>
+                        <div class="olcham">
+                            <p>17</p>
+                        </div>
+                        <div class="olcham">
+                            <p>18</p>
+                        </div>
+                        <div class="olcham">
+                            <p>19</p>
+                        </div>
+                        <div class="olcham">
+                            <p>20</p>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <p>Sotuvda 27 dona bor</p>
+                    </div>
+                    <div class="row2">
+                        <div class="box">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <p>Bu haftada 12 kishi sotib oldi</p>
+                    </div>
+                </div>
+                <h1>5 ta sharh</h1>
+                <div class="row5">
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                    <div class="sharh">
+                        <h3>Adxamjon</h3>
+                        <div class="row3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>8-sentyabr</p>
+                        </div>
+                        <p>Izoh: <span> Assalomu alaykum barchaga buyurtmani oldim hammaga kattakon raxmat sifatga
+                                gap
+                                yo'q </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buy">
+            <h1>250 ming so'm</h1>
+            <button id="buyBtn" class="buyBtn">Sotib olish</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="./script.js">
+
+</script>
+
+</html>
