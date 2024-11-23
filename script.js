@@ -23,6 +23,13 @@ let Back21 = document.getElementById('Back21')
 let Back22 = document.getElementById('Back22')
 let Back23 = document.getElementById('Back23')
 
+let forBoys = document.getElementById('forBoys');
+let forGirls = document.getElementById('forGirls');
+let forChildren = document.getElementById('forChildrens');
+let pen = document.getElementById('pen')
+let Home = document.getElementById('homeThings')
+let toys = document.getElementById('toys')
+
 
 let btn = document.getElementById('btn')
 let btn1 = document.getElementById('btn1')
@@ -50,232 +57,242 @@ let btn22 = document.getElementById('btn22')
 let btn23 = document.getElementById('btn23')
 
 
+
+forBoys.addEventListener('click', () => {
+    document.body.querySelector('.container').querySelector('.erkaklar').style.display = 'block'
+    document.body.querySelector('.container').querySelector('.card').style.display = 'none'
+    document.body.querySelector('.container').querySelector('.reklama').style.display = 'none'
+})
+
+
+
 Back.addEventListener('click', () => {
     document.body.querySelector('.About').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back1.addEventListener('click', () => {
     document.body.querySelector('.About1').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back2.addEventListener('click', () => {
     document.body.querySelector('.About2').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back3.addEventListener('click', () => {
     document.body.querySelector('.About3').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back4.addEventListener('click', () => {
     document.body.querySelector('.About4').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back5.addEventListener('click', () => {
     document.body.querySelector('.About5').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back6.addEventListener('click', () => {
     document.body.querySelector('.About6').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back7.addEventListener('click', () => {
     document.body.querySelector('.About7').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back8.addEventListener('click', () => {
     document.body.querySelector('.About8').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back9.addEventListener('click', () => {
     document.body.querySelector('.About9').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back10.addEventListener('click', () => {
     document.body.querySelector('.About10').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 Back11.addEventListener('click', () => {
     document.body.querySelector('.About11').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back12.addEventListener('click', () => {
     document.body.querySelector('.About12').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back13.addEventListener('click', () => {
     document.body.querySelector('.About13').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back14.addEventListener('click', () => {
     document.body.querySelector('.About14').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back15.addEventListener('click', () => {
     document.body.querySelector('.About15').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back16.addEventListener('click', () => {
     document.body.querySelector('.About16').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back17.addEventListener('click', () => {
     document.body.querySelector('.About17').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
-// Back18.addEventListener('click', () => {
-//     document.body.querySelector('.About18').style.display = 'none'
-//     document.body.querySelector('.container').style.display = 'block'
-// })
+Back18.addEventListener('click', () => {
+    document.body.querySelector('.About18').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'block'
+})
 Back19.addEventListener('click', () => {
     document.body.querySelector('.About19').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back20.addEventListener('click', () => {
     document.body.querySelector('.About20').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back21.addEventListener('click', () => {
     document.body.querySelector('.About21').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back22.addEventListener('click', () => {
     document.body.querySelector('.About22').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 Back23.addEventListener('click', () => {
     document.body.querySelector('.About23').style.display = 'none'
-    document.body.querySelector('.container').style.display = 'block'
+    document.body.querySelector('.things1').style.display = 'block'
 })
 
 
 
 btn.addEventListener('click', () => {
     document.body.querySelector('.About').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
+
 })
 
 btn1.addEventListener('click', () => {
     document.body.querySelector('.About1').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn2.addEventListener('click', () => {
     document.body.querySelector('.About2').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn3.addEventListener('click', () => {
     document.body.querySelector('.About3').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn4.addEventListener('click', () => {
     document.body.querySelector('.About4').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn5.addEventListener('click', () => {
     document.body.querySelector('.About5').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn6.addEventListener('click', () => {
     document.body.querySelector('.About6').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn7.addEventListener('click', () => {
     document.body.querySelector('.About7').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn8.addEventListener('click', () => {
     document.body.querySelector('.About8').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn9.addEventListener('click', () => {
     document.body.querySelector('.About9').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn10.addEventListener('click', () => {
     document.body.querySelector('.About10').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn11.addEventListener('click', () => {
     document.body.querySelector('.About11').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn12.addEventListener('click', () => {
     document.body.querySelector('.About12').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn13.addEventListener('click', () => {
     document.body.querySelector('.About13').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn14.addEventListener('click', () => {
     document.body.querySelector('.About14').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn15.addEventListener('click', () => {
     document.body.querySelector('.About15').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn16.addEventListener('click', () => {
     document.body.querySelector('.About16').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn17.addEventListener('click', () => {
     document.body.querySelector('.About17').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn18.addEventListener('click', () => {
     document.body.querySelector('.About18').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn19.addEventListener('click', () => {
     document.body.querySelector('.About19').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn20.addEventListener('click', () => {
     document.body.querySelector('.About20').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn21.addEventListener('click', () => {
     document.body.querySelector('.About21').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn22.addEventListener('click', () => {
     document.body.querySelector('.About22').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
 
 btn23.addEventListener('click', () => {
     document.body.querySelector('.About23').style.display = 'block'
-    document.body.querySelector('.container').style.display = 'none'
+    document.body.querySelector('.things1').style.display = 'none'
 })
