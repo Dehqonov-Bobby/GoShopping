@@ -115,7 +115,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                margin-top: 10px;
+                margin-top: 20px;
 
                 button {
                     border-radius: 20px;
@@ -123,6 +123,7 @@ body {
                     color: white;
                     border: 2px solid white;
                     padding: 5px 10px 5px 10px;
+                    margin-left: 80px;
                 }
             }
         }
@@ -656,9 +657,9 @@ body {
 
                 .hashtag {
                     height: 20px;
-                    font-size: 6.5px;
+                    font-size: 5px;
                     margin: 0;
-                    padding: 1;
+                    padding: 2;
                 }
             }
         }
@@ -667,7 +668,7 @@ body {
             .things {
                 .card1 {
                     height: 340px;
-                    width: 190px;
+                    width: 150px;
                     padding: 0;
 
                     img {
@@ -697,7 +698,7 @@ body {
 
         .aboutUs {
             .h1 {
-                font-size: 8px;
+                font-size: 6px;
                 margin-top: -60px;
             }
 
@@ -727,101 +728,112 @@ body {
                         margin-left: 10px;
                     }
                 }
-                .info{
-                    .star{
-                        .sharh2{
-                            .h6{
+
+                .info {
+                    .star {
+                        .sharh2 {
+                            .h6 {
                                 font-size: 10px;
 
-                                .fa-solid{
+                                .fa-solid {
                                     font-size: 10px;
                                 }
                             }
                         }
                     }
 
-                    .h5{
+                    .h5 {
                         font-size: 10px;
                     }
 
-                    .row{
+                    .row {
                         display: flex;
                         flex-wrap: nowrap;
 
-                        .olcham{
+                        .olcham {
                             width: 5px;
                             height: 5px;
                             padding: 15px;
                             align-items: center;
                             justify-content: center;
-                            margin-left: 20px;
+                            margin-left: 10px;
 
-                            .p{
-                                margin: 0;padding: 0;
+                            .p {
+                                margin: 0;
+                                padding: 0;
+                                font-size: 10px;
+
                             }
                         }
                     }
 
-                    .row2{
-                        .box{
+                    .row2 {
+                        .box {
                             width: 10px;
                             height: 10px;
                             padding: 20px;
                             align-items: center;
                             justify-content: center;
-                            
-                            .fa-solid{
+
+                            .fa-solid {
                                 font-size: 15px;
                             }
                         }
 
-                        .p{
+                        .p {
                             font-size: 15px;
                         }
                     }
 
-                    .h1{
+                    .h1 {
                         font-size: 15px;
                     }
 
-                    .row5{
+                    .row5 {
                         margin-left: -20px;
-                        .sharh{
-                            width: 200px;
+
+                        .sharh {
+                            width: 170px;
                             height: 150px;
                             margin-left: 0px;
+                            margin-right: 5px;
 
-                            .h3{
+                            .h3 {
                                 font-size: 15px;
-                                margin: 15px;
+                                margin-left: 10px;
                             }
-                            .row3{
-                                margin-left: 15px;
-                                .fa-solid{
+
+                            .row3 {
+                                margin-left: 10px;
+
+                                .fa-solid {
                                     font-size: 10px;
-                                    margin-left: 1px;
+                                    margin-left: 0px;
                                 }
 
-                                .p{
+                                .p {
                                     font-size: 10px;
                                 }
                             }
-                            .p{
+
+                            .p {
                                 font-size: 10px;
+                                margin-left: 10px;
                             }
                         }
                     }
                 }
             }
 
-            .buy{
+            .buy {
                 height: 70px;
-                .h1{
+
+                .h1 {
                     font-size: 20px;
                     margin-left: 20px;
                 }
 
-                .buyBtn{
+                .buyBtn {
                     margin-left: 20px;
                     width: 100px;
                     height: 30px;
