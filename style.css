@@ -665,7 +665,7 @@ body {
 
                 .hashtag {
                     height: 20px;
-                    font-size: 4px;
+                    font-size: 3px;
                     margin: 0;
                     padding: 2;
                 }
@@ -706,7 +706,7 @@ body {
 
         .aboutUs {
             .h1 {
-                font-size: 5px;
+                font-size: 3px;
                 margin-top: -60px;
             }
 
@@ -728,7 +728,7 @@ body {
         .About {
             .row {
                 .img {
-                    width: 320px;
+                    width: 280px;
                     height: 400px;
 
                     .fa-solid {

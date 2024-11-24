@@ -57,10 +57,86 @@ let btn22 = document.getElementById('btn22')
 let btn23 = document.getElementById('btn23')
 
 
+let erkaklar = document.getElementsByClassName('.erkaklar')
+let ayollar = document.getElementsByClassName('ayollar')
+let bolalar = document.getElementsByClassName('bolalar')
+let pens = document.getElementsByClassName('pens')
+let uyJihozlar = document.getElementsByClassName('uyJihozlar')
+let boshqalar = document.getElementsByClassName('boshqalar')
 
-forBoys.addEventListener('click', () => {
 
-})
+document.getElementById('forBoys').addEventListener('click', function() {
+    filterItems('erkaklar');
+});
+document.getElementById('forGirls').addEventListener('click', function() {
+    filterItems('ayollar');
+});
+document.getElementById('forChildrens').addEventListener('click', function() {
+    filterItems('bolalar');
+});
+document.getElementById('pen').addEventListener('click', function() {
+    filterItems('pens');
+});
+document.getElementById('homeThings').addEventListener('click', function() {
+    filterItems('uyJihozlar');
+});
+document.getElementById('toys').addEventListener('click', function() {
+    filterItems('boshqalar');
+});
+
+function filterItems(type) {
+    const items = document.querySelectorAll('.grid-item');
+    if (type == "forBoys"){
+        items.forEach(item => {
+            if (item.id.startsWith("erkaklar")) {
+                item.style.display = 'block'; 
+            } else {
+                item.style.display = 'block'; 
+            }
+
+        });
+        items.forEach(item => {
+            if (item.id.startsWith("ayollar")) {
+                item.style.display = 'block'; 
+            } else {
+                item.style.display = 'block';
+            }
+
+        });
+        items.forEach(item => {
+            if (item.id.startsWith("bolalar")) {
+                item.style.display = 'block'; 
+            } else {
+                item.style.display = 'block'; 
+            }
+
+        });
+        items.forEach(item => {
+            if (item.id.startsWith("pens")) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'block'; 
+            }
+
+        });
+        items.forEach(item => {
+            if (item.id.startsWith("uyJihozlar")) {
+                item.style.display = 'block'; 
+            } else {
+                item.style.display = 'block'; 
+            }
+
+        });
+        return false
+    }
+    items.forEach(item => {
+        if (item.id.startsWith(type)) {
+            item.style.display = 'block'; 
+        } else {
+            item.style.display = 'none'; 
+        }
+    });
+}
 
 
 
