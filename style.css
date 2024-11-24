@@ -648,7 +648,15 @@ body {
                 }
 
                 .ahref {
-                    margin-left: 0px;
+                    margin-left: -500px;
+                    font-size: 10px;
+                    margin-top: 0px;
+                }
+
+                .button{
+                    width: 100px;
+                    height: 30px;
+                    font-size: 10px;
                 }
             }
 
@@ -657,7 +665,7 @@ body {
 
                 .hashtag {
                     height: 20px;
-                    font-size: 5px;
+                    font-size: 4px;
                     margin: 0;
                     padding: 2;
                 }
@@ -683,7 +691,7 @@ body {
                     }
 
                     p {
-                        font-size: 10px;
+                        font-size: 8px;
                     }
 
                     .btn {
@@ -698,7 +706,7 @@ body {
 
         .aboutUs {
             .h1 {
-                font-size: 6px;
+                font-size: 5px;
                 margin-top: -60px;
             }
 

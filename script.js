@@ -59,9 +59,7 @@ let btn23 = document.getElementById('btn23')
 
 
 forBoys.addEventListener('click', () => {
-    document.body.querySelector('.container').querySelector('.erkaklar').style.display = 'block'
-    document.body.querySelector('.container').querySelector('.card').style.display = 'none'
-    document.body.querySelector('.container').querySelector('.reklama').style.display = 'none'
+
 })
 
 
